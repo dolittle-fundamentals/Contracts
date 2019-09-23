@@ -28,24 +28,11 @@
     "types": "index.d.ts",
     "typings": "index.d.ts",
     "scripts": {
-        "ts:cjs": "tsc -p tsconfig.json --declaration false",
-        "ts:typedefs": "tsc --outDir . --emitDeclarationOnly",
-        "ts:all": "yarn ts:cjs && yarn ts:typedefs",
-        "ts:clean": "del './*.d.ts' '**/*.d.ts' '!node_modules/**/*' lib && yarn codegen",
-        "build": "yarn clean && yarn ts:all",
-        "clean": "del dist && yarn ts:clean",
-        "codegen": "./generate_proxies.sh",
-        "prepublish": "yarn codegen && yarn build"
+        "build": "npx dolittle_proto_build ../DependencyInversion ../system",
+        "prepublish": "yarn build"
     },
-    "dependencies": {
-        "@types/google-protobuf": "^3.7.1",
-        "grpc": "^1.23.2",
-        "ts-protoc-gen": "^0.11.0"
-    },
+    "dependencies": {},
     "devDependencies": {
-        "@types/node": "12.0.0",
-        "del-cli": "^2.0.0",
-        "grpc-tools": "^1.8.0",
-        "typescript": "^3.4.5"
+        "@dolittle/protobuf.build": "1.0.7"
     }
 }

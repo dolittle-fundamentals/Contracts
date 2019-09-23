@@ -6,7 +6,7 @@
       "baseUrl": "./",
       
       "paths": {
-          "@dolittle/fundamentals.services.grpc": ["index.ts"]
+          "@dolittle/fundamentals.dependencyinversion.grpc": ["index.ts"]
       },
       "sourceRoot": "./"
     },

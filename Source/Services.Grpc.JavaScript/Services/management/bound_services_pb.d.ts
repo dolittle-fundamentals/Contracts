@@ -1,5 +1,5 @@
 // package: dolittle.services.management
-// file: dolittle/services/management/bound_services.proto
+// file: Services/management/bound_services.proto
 
 import * as jspb from "google-protobuf";
 
