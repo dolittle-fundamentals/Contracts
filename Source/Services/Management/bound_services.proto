@@ -6,7 +6,7 @@ syntax = "proto3";
 
 package dolittle.services.management;
 
-option csharp_namespace = "Dolittle.Services.Management.Grpc";
+option csharp_namespace = "Dolittle.Services.Management";
 
 message GetBindingsRequest {}
 

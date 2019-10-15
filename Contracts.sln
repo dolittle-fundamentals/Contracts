@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{2815616E-4B3E-49C7-AD15-57F46B28B12C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion.Grpc.CSharp", "Source\DependencyInversion.Grpc.CSharp\DependencyInversion.Grpc.CSharp.csproj", "{3C74702C-AFBF-4BCF-83D8-B68F56E9C762}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion.CSharp", "Source\DependencyInversion.CSharp\DependencyInversion.CSharp.csproj", "{3C74702C-AFBF-4BCF-83D8-B68F56E9C762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Grpc.CSharp", "Source\Services.Grpc.CSharp\Services.Grpc.CSharp.csproj", "{896D8385-F383-4DF4-94F2-2852DD1B21C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.CSharp", "Source\Services.CSharp\Services.CSharp.csproj", "{896D8385-F383-4DF4-94F2-2852DD1B21C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Grpc.CSharp", "Source\System.Grpc.CSharp\System.Grpc.CSharp.csproj", "{AE7EC0B0-E081-4771-9C89-8C6B95DA69B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.CSharp", "Source\System.CSharp\System.CSharp.csproj", "{AE7EC0B0-E081-4771-9C89-8C6B95DA69B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

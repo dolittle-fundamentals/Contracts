@@ -1,5 +1,5 @@
 {
-    "name": "@dolittle/fundamentals.services.grpc",
+    "name": "@dolittle/services.grpc",
     "description": "Grpc services for fundamentals",
     "version": "3.2.0",
     "homepage": "https://dolittle.io",

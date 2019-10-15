@@ -3,11 +3,15 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <AssemblyName>Dolittle.System.Grpc</AssemblyName>
-        <DolittleProtoProject>../system</DolittleProtoProject>
+        <AssemblyName>Dolittle.DependencyInversion.Contracts</AssemblyName>
+        <DolittleProtoProject>../DependencyInversion</DolittleProtoProject>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Dolittle.Protobuf.MSBuild" Version="1.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../System.CSharp/System.CSharp.csproj"/>
     </ItemGroup>
 </Project>

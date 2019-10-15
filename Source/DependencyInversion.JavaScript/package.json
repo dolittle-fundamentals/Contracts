@@ -1,5 +1,5 @@
 {
-    "name": "@dolittle/fundamentals.dependencyinversion.grpc",
+    "name": "@dolittle/dependencyinversion.contracts",
     "description": "Grpc services for fundamentals",
     "version": "3.2.0",
     "homepage": "https://dolittle.io",

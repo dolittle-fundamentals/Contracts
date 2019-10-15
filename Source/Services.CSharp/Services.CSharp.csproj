@@ -3,7 +3,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <AssemblyName>Dolittle.Services.Grpc</AssemblyName>
+        <AssemblyName>Dolittle.Services.Contracts</AssemblyName>
         <DolittleProtoProject>../Services</DolittleProtoProject>
     </PropertyGroup>
 
@@ -12,6 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="../System.Grpc.CSharp/System.Grpc.CSharp.csproj"/>
+        <ProjectReference Include="../System.CSharp/System.CSharp.csproj"/>
     </ItemGroup>
 </Project>
