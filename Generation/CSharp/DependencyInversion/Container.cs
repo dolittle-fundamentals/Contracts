@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Management.DependencyInversion {
+namespace Dolittle.DependencyInversion.Management {
 
   /// <summary>Holder for reflection information generated from DependencyInversion/container.proto</summary>
   public static partial class ContainerReflection {
@@ -25,22 +25,22 @@ namespace Dolittle.Management.DependencyInversion {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNEZXBlbmRlbmN5SW52ZXJzaW9uL2NvbnRhaW5lci5wcm90bxInZG9saXR0",
-            "bGUubWFuYWdlbWVudC5kZXBlbmRlbmN5aW52ZXJzaW9uIhQKEkdldEJpbmRp",
+            "bGUuZGVwZW5kZW5jeWludmVyc2lvbi5tYW5hZ2VtZW50IhQKEkdldEJpbmRp",
             "bmdzUmVxdWVzdCJRCgdCaW5kaW5nEg8KB1NlcnZpY2UYASABKAkSEAoIU3Ry",
             "YXRlZ3kYAiABKAkSFAoMU3RyYXRlZ3lEYXRhGAMgASgJEg0KBVNjb3BlGAQg",
             "ASgJIk4KCEJpbmRpbmdzEkIKCEJpbmRpbmdzGAEgAygLMjAuZG9saXR0bGUu",
-            "bWFuYWdlbWVudC5kZXBlbmRlbmN5aW52ZXJzaW9uLkJpbmRpbmcyjAEKCUNv",
-            "bnRhaW5lchJ/CgtHZXRCaW5kaW5ncxI7LmRvbGl0dGxlLm1hbmFnZW1lbnQu",
-            "ZGVwZW5kZW5jeWludmVyc2lvbi5HZXRCaW5kaW5nc1JlcXVlc3QaMS5kb2xp",
-            "dHRsZS5tYW5hZ2VtZW50LmRlcGVuZGVuY3lpbnZlcnNpb24uQmluZGluZ3Mi",
-            "AEIqqgInRG9saXR0bGUuTWFuYWdlbWVudC5EZXBlbmRlbmN5SW52ZXJzaW9u",
+            "ZGVwZW5kZW5jeWludmVyc2lvbi5tYW5hZ2VtZW50LkJpbmRpbmcyjAEKCUNv",
+            "bnRhaW5lchJ/CgtHZXRCaW5kaW5ncxI7LmRvbGl0dGxlLmRlcGVuZGVuY3lp",
+            "bnZlcnNpb24ubWFuYWdlbWVudC5HZXRCaW5kaW5nc1JlcXVlc3QaMS5kb2xp",
+            "dHRsZS5kZXBlbmRlbmN5aW52ZXJzaW9uLm1hbmFnZW1lbnQuQmluZGluZ3Mi",
+            "AEIqqgInRG9saXR0bGUuRGVwZW5kZW5jeUludmVyc2lvbi5NYW5hZ2VtZW50",
             "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Management.DependencyInversion.GetBindingsRequest), global::Dolittle.Management.DependencyInversion.GetBindingsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Management.DependencyInversion.Binding), global::Dolittle.Management.DependencyInversion.Binding.Parser, new[]{ "Service", "Strategy", "StrategyData", "Scope" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Management.DependencyInversion.Bindings), global::Dolittle.Management.DependencyInversion.Bindings.Parser, new[]{ "Bindings_" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.DependencyInversion.Management.GetBindingsRequest), global::Dolittle.DependencyInversion.Management.GetBindingsRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.DependencyInversion.Management.Binding), global::Dolittle.DependencyInversion.Management.Binding.Parser, new[]{ "Service", "Strategy", "StrategyData", "Scope" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.DependencyInversion.Management.Bindings), global::Dolittle.DependencyInversion.Management.Bindings.Parser, new[]{ "Bindings_" }, null, null, null)
           }));
     }
     #endregion
@@ -55,7 +55,7 @@ namespace Dolittle.Management.DependencyInversion {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Management.DependencyInversion.ContainerReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.DependencyInversion.Management.ContainerReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -156,7 +156,7 @@ namespace Dolittle.Management.DependencyInversion {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Management.DependencyInversion.ContainerReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Dolittle.DependencyInversion.Management.ContainerReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -369,7 +369,7 @@ namespace Dolittle.Management.DependencyInversion {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Management.DependencyInversion.ContainerReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Dolittle.DependencyInversion.Management.ContainerReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -397,11 +397,11 @@ namespace Dolittle.Management.DependencyInversion {
 
     /// <summary>Field number for the "Bindings" field.</summary>
     public const int Bindings_FieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Dolittle.Management.DependencyInversion.Binding> _repeated_bindings_codec
-        = pb::FieldCodec.ForMessage(10, global::Dolittle.Management.DependencyInversion.Binding.Parser);
-    private readonly pbc::RepeatedField<global::Dolittle.Management.DependencyInversion.Binding> bindings_ = new pbc::RepeatedField<global::Dolittle.Management.DependencyInversion.Binding>();
+    private static readonly pb::FieldCodec<global::Dolittle.DependencyInversion.Management.Binding> _repeated_bindings_codec
+        = pb::FieldCodec.ForMessage(10, global::Dolittle.DependencyInversion.Management.Binding.Parser);
+    private readonly pbc::RepeatedField<global::Dolittle.DependencyInversion.Management.Binding> bindings_ = new pbc::RepeatedField<global::Dolittle.DependencyInversion.Management.Binding>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Dolittle.Management.DependencyInversion.Binding> Bindings_ {
+    public pbc::RepeatedField<global::Dolittle.DependencyInversion.Management.Binding> Bindings_ {
       get { return bindings_; }
     }
 

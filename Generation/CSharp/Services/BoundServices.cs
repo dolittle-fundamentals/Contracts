@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Dolittle.Management.Services {
+namespace Dolittle.Services.Management {
 
   /// <summary>Holder for reflection information generated from Services/bound_services.proto</summary>
   public static partial class BoundServicesReflection {
@@ -24,22 +24,22 @@ namespace Dolittle.Management.Services {
     static BoundServicesReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1TZXJ2aWNlcy9ib3VuZF9zZXJ2aWNlcy5wcm90bxIcZG9saXR0bGUubWFu",
-            "YWdlbWVudC5zZXJ2aWNlcyIUChJHZXRCaW5kaW5nc1JlcXVlc3QiGwoLU2Vy",
+            "Ch1TZXJ2aWNlcy9ib3VuZF9zZXJ2aWNlcy5wcm90bxIcZG9saXR0bGUuc2Vy",
+            "dmljZXMubWFuYWdlbWVudCIUChJHZXRCaW5kaW5nc1JlcXVlc3QiGwoLU2Vy",
             "dmljZVR5cGUSDAoETmFtZRgBIAEoCSIXCgdTZXJ2aWNlEgwKBE5hbWUYASAB",
             "KAkiSAoIU2VydmljZXMSPAoNQm91bmRTZXJ2aWNlcxgBIAMoCzIlLmRvbGl0",
-            "dGxlLm1hbmFnZW1lbnQuc2VydmljZXMuU2VydmljZTJ5Cg1Cb3VuZFNlcnZp",
-            "Y2VzEmgKEUdldEZvclNlcnZpY2VUeXBlEikuZG9saXR0bGUubWFuYWdlbWVu",
-            "dC5zZXJ2aWNlcy5TZXJ2aWNlVHlwZRomLmRvbGl0dGxlLm1hbmFnZW1lbnQu",
-            "c2VydmljZXMuU2VydmljZXMiAEIfqgIcRG9saXR0bGUuTWFuYWdlbWVudC5T",
-            "ZXJ2aWNlc2IGcHJvdG8z"));
+            "dGxlLnNlcnZpY2VzLm1hbmFnZW1lbnQuU2VydmljZTJ5Cg1Cb3VuZFNlcnZp",
+            "Y2VzEmgKEUdldEZvclNlcnZpY2VUeXBlEikuZG9saXR0bGUuc2VydmljZXMu",
+            "bWFuYWdlbWVudC5TZXJ2aWNlVHlwZRomLmRvbGl0dGxlLnNlcnZpY2VzLm1h",
+            "bmFnZW1lbnQuU2VydmljZXMiAEIfqgIcRG9saXR0bGUuU2VydmljZXMuTWFu",
+            "YWdlbWVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Management.Services.GetBindingsRequest), global::Dolittle.Management.Services.GetBindingsRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Management.Services.ServiceType), global::Dolittle.Management.Services.ServiceType.Parser, new[]{ "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Management.Services.Service), global::Dolittle.Management.Services.Service.Parser, new[]{ "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Management.Services.Services), global::Dolittle.Management.Services.Services.Parser, new[]{ "BoundServices" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Services.Management.GetBindingsRequest), global::Dolittle.Services.Management.GetBindingsRequest.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Services.Management.ServiceType), global::Dolittle.Services.Management.ServiceType.Parser, new[]{ "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Services.Management.Service), global::Dolittle.Services.Management.Service.Parser, new[]{ "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Dolittle.Services.Management.Services), global::Dolittle.Services.Management.Services.Parser, new[]{ "BoundServices" }, null, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Dolittle.Management.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Management.Services.BoundServicesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Dolittle.Services.Management.BoundServicesReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -155,7 +155,7 @@ namespace Dolittle.Management.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Management.Services.BoundServicesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Dolittle.Services.Management.BoundServicesReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -284,7 +284,7 @@ namespace Dolittle.Management.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Management.Services.BoundServicesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Dolittle.Services.Management.BoundServicesReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -413,7 +413,7 @@ namespace Dolittle.Management.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Dolittle.Management.Services.BoundServicesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Dolittle.Services.Management.BoundServicesReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -441,11 +441,11 @@ namespace Dolittle.Management.Services {
 
     /// <summary>Field number for the "BoundServices" field.</summary>
     public const int BoundServicesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Dolittle.Management.Services.Service> _repeated_boundServices_codec
-        = pb::FieldCodec.ForMessage(10, global::Dolittle.Management.Services.Service.Parser);
-    private readonly pbc::RepeatedField<global::Dolittle.Management.Services.Service> boundServices_ = new pbc::RepeatedField<global::Dolittle.Management.Services.Service>();
+    private static readonly pb::FieldCodec<global::Dolittle.Services.Management.Service> _repeated_boundServices_codec
+        = pb::FieldCodec.ForMessage(10, global::Dolittle.Services.Management.Service.Parser);
+    private readonly pbc::RepeatedField<global::Dolittle.Services.Management.Service> boundServices_ = new pbc::RepeatedField<global::Dolittle.Services.Management.Service>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Dolittle.Management.Services.Service> BoundServices {
+    public pbc::RepeatedField<global::Dolittle.Services.Management.Service> BoundServices {
       get { return boundServices_; }
     }
 

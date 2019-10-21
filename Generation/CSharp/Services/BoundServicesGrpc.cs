@@ -12,35 +12,35 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Dolittle.Management.Services {
+namespace Dolittle.Services.Management {
   /// <summary>
   /// Represents all the bound gRPC services in the system
   /// </summary>
   public static partial class BoundServices
   {
-    static readonly string __ServiceName = "dolittle.management.services.BoundServices";
+    static readonly string __ServiceName = "dolittle.services.management.BoundServices";
 
-    static readonly grpc::Marshaller<global::Dolittle.Management.Services.ServiceType> __Marshaller_dolittle_management_services_ServiceType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Management.Services.ServiceType.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Dolittle.Management.Services.Services> __Marshaller_dolittle_management_services_Services = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Management.Services.Services.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Dolittle.Services.Management.ServiceType> __Marshaller_dolittle_services_management_ServiceType = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Services.Management.ServiceType.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Dolittle.Services.Management.Services> __Marshaller_dolittle_services_management_Services = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Services.Management.Services.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::Dolittle.Management.Services.ServiceType, global::Dolittle.Management.Services.Services> __Method_GetForServiceType = new grpc::Method<global::Dolittle.Management.Services.ServiceType, global::Dolittle.Management.Services.Services>(
+    static readonly grpc::Method<global::Dolittle.Services.Management.ServiceType, global::Dolittle.Services.Management.Services> __Method_GetForServiceType = new grpc::Method<global::Dolittle.Services.Management.ServiceType, global::Dolittle.Services.Management.Services>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetForServiceType",
-        __Marshaller_dolittle_management_services_ServiceType,
-        __Marshaller_dolittle_management_services_Services);
+        __Marshaller_dolittle_services_management_ServiceType,
+        __Marshaller_dolittle_services_management_Services);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Dolittle.Management.Services.BoundServicesReflection.Descriptor.Services[0]; }
+      get { return global::Dolittle.Services.Management.BoundServicesReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of BoundServices</summary>
     [grpc::BindServiceMethod(typeof(BoundServices), "BindService")]
     public abstract partial class BoundServicesBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Dolittle.Management.Services.Services> GetForServiceType(global::Dolittle.Management.Services.ServiceType request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Dolittle.Services.Management.Services> GetForServiceType(global::Dolittle.Services.Management.ServiceType request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -70,19 +70,19 @@ namespace Dolittle.Management.Services {
       {
       }
 
-      public virtual global::Dolittle.Management.Services.Services GetForServiceType(global::Dolittle.Management.Services.ServiceType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Dolittle.Services.Management.Services GetForServiceType(global::Dolittle.Services.Management.ServiceType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetForServiceType(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Dolittle.Management.Services.Services GetForServiceType(global::Dolittle.Management.Services.ServiceType request, grpc::CallOptions options)
+      public virtual global::Dolittle.Services.Management.Services GetForServiceType(global::Dolittle.Services.Management.ServiceType request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetForServiceType, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Dolittle.Management.Services.Services> GetForServiceTypeAsync(global::Dolittle.Management.Services.ServiceType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Dolittle.Services.Management.Services> GetForServiceTypeAsync(global::Dolittle.Services.Management.ServiceType request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetForServiceTypeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Dolittle.Management.Services.Services> GetForServiceTypeAsync(global::Dolittle.Management.Services.ServiceType request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Dolittle.Services.Management.Services> GetForServiceTypeAsync(global::Dolittle.Services.Management.ServiceType request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetForServiceType, null, options, request);
       }
@@ -107,7 +107,7 @@ namespace Dolittle.Management.Services {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, BoundServicesBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetForServiceType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dolittle.Management.Services.ServiceType, global::Dolittle.Management.Services.Services>(serviceImpl.GetForServiceType));
+      serviceBinder.AddMethod(__Method_GetForServiceType, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dolittle.Services.Management.ServiceType, global::Dolittle.Services.Management.Services>(serviceImpl.GetForServiceType));
     }
 
   }

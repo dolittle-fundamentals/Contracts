@@ -285,3 +285,5 @@ Artifacts/
 # Including our Artifacts folders - which are specific projects
 !Source/Artifacts/
 !Specifications/Artifacts/
+
+Generation

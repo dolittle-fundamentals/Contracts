@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-package dolittle.management.dependencyinversion;
+package dolittle.dependencyinversion.management;
 
-option csharp_namespace = "Dolittle.Management.DependencyInversion";
+option csharp_namespace = "Dolittle.DependencyInversion.Management";
 
 message GetBindingsRequest {}
 

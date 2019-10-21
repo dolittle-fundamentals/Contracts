@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-package dolittle.management.services;
+package dolittle.services.management;
 
-option csharp_namespace = "Dolittle.Management.Services";
+option csharp_namespace = "Dolittle.Services.Management";
 
 message GetBindingsRequest {}
 

@@ -12,35 +12,35 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Dolittle.Management.DependencyInversion {
+namespace Dolittle.DependencyInversion.Management {
   /// <summary>
   /// Represents the IoC container
   /// </summary>
   public static partial class Container
   {
-    static readonly string __ServiceName = "dolittle.management.dependencyinversion.Container";
+    static readonly string __ServiceName = "dolittle.dependencyinversion.management.Container";
 
-    static readonly grpc::Marshaller<global::Dolittle.Management.DependencyInversion.GetBindingsRequest> __Marshaller_dolittle_management_dependencyinversion_GetBindingsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Management.DependencyInversion.GetBindingsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Dolittle.Management.DependencyInversion.Bindings> __Marshaller_dolittle_management_dependencyinversion_Bindings = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.Management.DependencyInversion.Bindings.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Dolittle.DependencyInversion.Management.GetBindingsRequest> __Marshaller_dolittle_dependencyinversion_management_GetBindingsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.DependencyInversion.Management.GetBindingsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Dolittle.DependencyInversion.Management.Bindings> __Marshaller_dolittle_dependencyinversion_management_Bindings = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Dolittle.DependencyInversion.Management.Bindings.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::Dolittle.Management.DependencyInversion.GetBindingsRequest, global::Dolittle.Management.DependencyInversion.Bindings> __Method_GetBindings = new grpc::Method<global::Dolittle.Management.DependencyInversion.GetBindingsRequest, global::Dolittle.Management.DependencyInversion.Bindings>(
+    static readonly grpc::Method<global::Dolittle.DependencyInversion.Management.GetBindingsRequest, global::Dolittle.DependencyInversion.Management.Bindings> __Method_GetBindings = new grpc::Method<global::Dolittle.DependencyInversion.Management.GetBindingsRequest, global::Dolittle.DependencyInversion.Management.Bindings>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetBindings",
-        __Marshaller_dolittle_management_dependencyinversion_GetBindingsRequest,
-        __Marshaller_dolittle_management_dependencyinversion_Bindings);
+        __Marshaller_dolittle_dependencyinversion_management_GetBindingsRequest,
+        __Marshaller_dolittle_dependencyinversion_management_Bindings);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Dolittle.Management.DependencyInversion.ContainerReflection.Descriptor.Services[0]; }
+      get { return global::Dolittle.DependencyInversion.Management.ContainerReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of Container</summary>
     [grpc::BindServiceMethod(typeof(Container), "BindService")]
     public abstract partial class ContainerBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::Dolittle.Management.DependencyInversion.Bindings> GetBindings(global::Dolittle.Management.DependencyInversion.GetBindingsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Dolittle.DependencyInversion.Management.Bindings> GetBindings(global::Dolittle.DependencyInversion.Management.GetBindingsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -70,19 +70,19 @@ namespace Dolittle.Management.DependencyInversion {
       {
       }
 
-      public virtual global::Dolittle.Management.DependencyInversion.Bindings GetBindings(global::Dolittle.Management.DependencyInversion.GetBindingsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Dolittle.DependencyInversion.Management.Bindings GetBindings(global::Dolittle.DependencyInversion.Management.GetBindingsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetBindings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::Dolittle.Management.DependencyInversion.Bindings GetBindings(global::Dolittle.Management.DependencyInversion.GetBindingsRequest request, grpc::CallOptions options)
+      public virtual global::Dolittle.DependencyInversion.Management.Bindings GetBindings(global::Dolittle.DependencyInversion.Management.GetBindingsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetBindings, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::Dolittle.Management.DependencyInversion.Bindings> GetBindingsAsync(global::Dolittle.Management.DependencyInversion.GetBindingsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Dolittle.DependencyInversion.Management.Bindings> GetBindingsAsync(global::Dolittle.DependencyInversion.Management.GetBindingsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetBindingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::Dolittle.Management.DependencyInversion.Bindings> GetBindingsAsync(global::Dolittle.Management.DependencyInversion.GetBindingsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Dolittle.DependencyInversion.Management.Bindings> GetBindingsAsync(global::Dolittle.DependencyInversion.Management.GetBindingsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetBindings, null, options, request);
       }
@@ -107,7 +107,7 @@ namespace Dolittle.Management.DependencyInversion {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ContainerBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetBindings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dolittle.Management.DependencyInversion.GetBindingsRequest, global::Dolittle.Management.DependencyInversion.Bindings>(serviceImpl.GetBindings));
+      serviceBinder.AddMethod(__Method_GetBindings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Dolittle.DependencyInversion.Management.GetBindingsRequest, global::Dolittle.DependencyInversion.Management.Bindings>(serviceImpl.GetBindings));
     }
 
   }
